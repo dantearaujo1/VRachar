@@ -38,11 +38,11 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     }
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
-            println("SUCESSO");
+
             val result = m_tts!!.setLanguage(Locale.US);
 
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                println("SUCESSO");
+
             } else {
 
             }
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
         tbValor.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int){
-                m_valor = if (s.isNotEmpty())  s.toString().toFloat() else 1.00f;
+                m_valor = if (s.isNotEmpty())  s.toString().toFloat() else 0.00f;
                 calculate();
             }
             override fun afterTextChanged(s: Editable){
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         })
         tbContas.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int){
-                m_contas = if (s.toString().isNotEmpty())  s.toString().toInt() else 1;
+                m_contas = if (s.toString().isNotEmpty())  s.toString().toInt() else 0;
                 calculate();
             }
             override fun afterTextChanged(s: Editable){
@@ -99,6 +99,21 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
 
     }
 
+    override fun onSaveInstanceState(savedInstanceState: Bundle) {
+        savedInstanceState.putString("resultado", m_sResultado);
+        savedInstanceState.putFloat("valor",m_valor);
+        savedInstanceState.putInt("contas",m_contas);
+        // Always call the superclass so it can save the view hierarchy state
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        m_contas = savedInstanceState.getInt("contas");
+        m_sResultado = savedInstanceState.getString("resultado").toString();
+        m_valor = savedInstanceState.getFloat("valor");
+        super.onRestoreInstanceState(savedInstanceState)
+    }
+
     fun shareContent(content : String){
         val intent : Intent = Intent().apply{
             action = Intent.ACTION_SEND;
@@ -109,7 +124,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         startActivity(shareIntent);
     }
     fun calculate(){
-        m_resultado = if(m_contas >= 0 && m_valor >= 0) m_valor/m_contas else m_resultado;
+        m_resultado = if(m_contas > 0 && m_valor >= 0.00f) m_valor/m_contas else 0.00f;
     }
     fun speak(content : String){
         m_tts!!.speak(content, TextToSpeech.QUEUE_FLUSH,null,"");

@@ -9,10 +9,12 @@
         <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-land/activity_main.xml" value="0.30599647266313934" />
         <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1575" />
+        <entry key="..\:/Users/aluno/AndroidStudioProjects/VRachar/app/src/main/res/layout-land/activity_main.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/aluno/AndroidStudioProjects/VRachar/app/src/main/res/layout/activity_main.xml" value="0.175" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
