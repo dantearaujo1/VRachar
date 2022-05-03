@@ -4,5 +4,6 @@
     <string name="valorHint">Valor total da Conta</string>
     <string name="peopleText">Pessoas:</string>
     <string name="peopleHint">Número de pessoas para dividir:</string>
-    <string name="currencyText">%1$s : %2$0.2f</string>
+    <string name="currencyText">%1$s : %2$.2f</string>
+    <string name="forEach">para cada pessoa.</string>
 </resources>
