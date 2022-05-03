@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VRachar</string>
+    <string name="valorText">Valor:</string>
+    <string name="valorHint">Valor total da Conta</string>
+    <string name="peopleText">Pessoas:</string>
+    <string name="peopleHint">Número de pessoas para dividir:</string>
+    <string name="currencyText">%1$s : %2$0.2f</string>
+</resources>
