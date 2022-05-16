@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">VRachar</string>
-    <string name="shareButtonContent">Button for share result</string>
+    <string name="shareButtonContent">for share result</string>
     <string name="forEach">for each person</string>
-    <string name="ttsButtonContent">Button for speak result</string>
+    <string name="ttsButtonContent">for speak result</string>
     <string name="peopleHint">Quantity of people</string>
     <string name="peopleText">People:</string>
     <string name="valueHint">Total value of Bill</string>

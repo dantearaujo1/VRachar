@@ -13,12 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="30dp"
-        android:contentDescription="@string/peopleText"
         android:ems="4"
         android:text="@string/peopleText"
         android:textColor="@color/white"
         android:textSize="18sp"
-        android:labelFor="@+id/tbContas"
         app:layout_constraintEnd_toStartOf="@+id/gdVCenter"
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
         app:layout_constraintTop_toTopOf="@+id/gdHLeft" />
@@ -29,8 +27,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="-24dp"
-
-        android:contentDescription="@string/peopleText"
         android:text="@string/resultText"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -62,12 +58,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
-        android:contentDescription="@string/valueText"
         android:ems="4"
         android:text="@string/valueText"
         android:textColor="@color/white"
         android:textSize="18sp"
-        android:labelFor="@+id/tbValor"
         app:layout_constraintEnd_toStartOf="@+id/gdVCenter"
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
         app:layout_constraintTop_toBottomOf="@+id/labelPessoas" />
@@ -100,6 +94,7 @@
         app:layout_constraintEnd_toStartOf="@+id/gdVRight"
         app:layout_constraintStart_toEndOf="@+id/fbShare"
         app:layout_constraintTop_toBottomOf="@+id/gdHCenter"
+        android:backgroundTint="@color/colorTitle"
         android:contentDescription="@string/ttsButtonContent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -112,6 +107,7 @@
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
         app:layout_constraintTop_toBottomOf="@+id/gdHCenter"
         app:srcCompat="?attr/actionModeShareDrawable"
+        android:backgroundTint="@color/colorTitle"
         android:contentDescription="@string/shareButtonContent"
         tools:ignore="ImageContrastCheck" />
 

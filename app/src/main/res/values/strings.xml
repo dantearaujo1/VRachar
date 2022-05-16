@@ -6,7 +6,7 @@
     <string name="peopleText">Pessoas:</string>
     <string name="peopleHint">Quantidade de pessoas</string>
     <string name="resultText" translatable="false">%1$s : %2$.2f</string>
-    <string name="ttsButtonContent">Botão para falar resultado</string>
-    <string name="shareButtonContent">Botão para compartilhar resultado</string>
+    <string name="ttsButtonContent">para falar resultado</string>
+    <string name="shareButtonContent">para compartilhar resultado</string>
     <string name="forEach">para cada pessoa.</string>
 </resources>

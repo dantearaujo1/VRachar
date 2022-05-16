@@ -6,7 +6,7 @@
     <string name="valueHint">Valor total da Conta</string>
     <string name="peopleText">Pessoas:</string>
     <string name="peopleHint">Quantidade de pessoas</string>
-    <string name="ttsButtonContent">Botão para falar resultado</string>
-    <string name="shareButtonContent">Botão para compartilhar resultado</string>
-    <string name="forEach">Botão para compartilhar resultado</string>
+    <string name="ttsButtonContent">para falar resultado</string>
+    <string name="shareButtonContent">para compartilhar resultado</string>
+    <string name="forEach">para compartilhar resultado</string>
 </resources>

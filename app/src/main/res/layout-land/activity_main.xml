@@ -13,7 +13,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
-        android:contentDescription=""
         android:ems="4"
         android:text="@string/peopleText"
         android:textColor="@color/white"
@@ -28,8 +27,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="-60dp"
-
-        android:contentDescription=""
         android:text="@string/resultText"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -60,7 +57,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
-        android:contentDescription=""
         android:ems="4"
         android:text="@string/valueText"
         android:textColor="@color/white"
@@ -95,6 +91,7 @@
         android:src="@android:drawable/ic_lock_silent_mode_off"
         app:layout_constraintEnd_toStartOf="@+id/gdVRight"
         app:layout_constraintStart_toEndOf="@+id/fbShare"
+        android:backgroundTint="@color/colorTitle"
         app:layout_constraintTop_toBottomOf="@+id/gdHCenter"
         android:contentDescription="@string/ttsButtonContent" />
 
@@ -108,6 +105,7 @@
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
         app:layout_constraintTop_toBottomOf="@+id/gdHCenter"
         app:srcCompat="?attr/actionModeShareDrawable"
+        android:backgroundTint="@color/colorTitle"
         tools:ignore="ImageContrastCheck"
         android:contentDescription="@string/ttsButtonContent" />
 
