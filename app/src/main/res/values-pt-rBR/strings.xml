@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">VRachar</string>
     <string name="app_tittle">Vamos Rachar</string>
@@ -5,8 +6,7 @@
     <string name="valueHint">Valor total da Conta</string>
     <string name="peopleText">Pessoas:</string>
     <string name="peopleHint">Quantidade de pessoas</string>
-    <string name="resultText" translatable="false">%1$s : %2$.2f</string>
     <string name="ttsButtonContent">Botão para falar resultado</string>
     <string name="shareButtonContent">Botão para compartilhar resultado</string>
-    <string name="forEach">para cada pessoa.</string>
+    <string name="forEach">Botão para compartilhar resultado</string>
 </resources>

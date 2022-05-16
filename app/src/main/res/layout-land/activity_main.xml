@@ -13,11 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
-        android:contentDescription="Número de Pessoas para dividir a conta"
+        android:contentDescription=""
         android:ems="4"
         android:text="@string/peopleText"
         android:textColor="@color/white"
         android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/gdVCenter"
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
         app:layout_constraintTop_toTopOf="@+id/gdHLeft" />
 
@@ -28,8 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="-60dp"
 
-        android:contentDescription="Número de Pessoas para dividir a conta"
-        android:text="@string/currencyText"
+        android:contentDescription=""
+        android:text="@string/resultText"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@id/gdHCenter"
@@ -40,7 +41,6 @@
         android:id="@+id/tbContas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:hint="@string/peopleHint"
@@ -51,7 +51,7 @@
         android:textColor="@color/white"
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="@+id/gdVRight"
-        app:layout_constraintStart_toEndOf="@+id/labelPessoas"
+        app:layout_constraintStart_toStartOf="@+id/gdVCenter"
         app:layout_constraintTop_toTopOf="@+id/gdHLeft" />
 
     <TextView
@@ -60,11 +60,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="50dp"
-        android:contentDescription="Valor da Conta"
+        android:contentDescription=""
         android:ems="4"
-        android:text="@string/valorText"
+        android:text="@string/valueText"
         android:textColor="@color/white"
         android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/gdVCenter"
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
         app:layout_constraintTop_toBottomOf="@+id/labelPessoas" />
 
@@ -72,18 +73,17 @@
         android:id="@+id/tbValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="32dp"
         android:ems="10"
-        android:hint="@string/valorHint"
+        android:hint="@string/valueHint"
         android:importantForAutofill="no"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="@+id/gdVRight"
-        app:layout_constraintStart_toEndOf="@+id/labelValor"
+        app:layout_constraintStart_toStartOf="@+id/gdVCenter"
         app:layout_constraintTop_toBottomOf="@+id/tbContas" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -95,7 +95,8 @@
         android:src="@android:drawable/ic_lock_silent_mode_off"
         app:layout_constraintEnd_toStartOf="@+id/gdVRight"
         app:layout_constraintStart_toEndOf="@+id/fbShare"
-        app:layout_constraintTop_toBottomOf="@+id/gdHCenter" />
+        app:layout_constraintTop_toBottomOf="@+id/gdHCenter"
+        android:contentDescription="@string/ttsButtonContent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fbShare"
@@ -107,7 +108,8 @@
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
         app:layout_constraintTop_toBottomOf="@+id/gdHCenter"
         app:srcCompat="?attr/actionModeShareDrawable"
-        tools:ignore="ImageContrastCheck" />
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/ttsButtonContent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gdVLeft"
@@ -149,7 +151,7 @@
         android:id="@+id/lbTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Vamos Rachar?"
+        android:text="@string/app_tittle"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"

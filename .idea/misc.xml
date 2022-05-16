@@ -6,7 +6,19 @@
         <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/drawable/gradient_background.xml" value="0.3625" />
         <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1575" />
         <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1575" />
-        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-land/activity_main.xml" value="0.30599647266313934" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-2560x1600/activity_main.xml" value="0.2" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-2560x1600/nexus_10.xml" value="0.1" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-480x800/activity_main.xml" value="0.33" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-480x800/nexus_s.xml" value="0.3145833333333333" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-land-2560x1600/activity_main.xml" value="0.22" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-land-480x800/activity_main.xml" value="0.449438202247191" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-land/activity_main.xml" value="0.22" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-sw320dp-land/activity_main.xml" value="0.67" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-sw320dp/activity_main.xml" value="0.4425" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-sw480dp/activity_main.xml" value="0.4425" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-sw720dp-land/activity_main.xml" value="0.25" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-sw720dp/activity_main.xml" value="0.13828125" />
+        <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout-w2560dp-h1600dp-port/activity_main.xml" value="0.2798913043478261" />
         <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Code/Android/Projects/VRachar/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1575" />
         <entry key="..\:/Users/aluno/AndroidStudioProjects/VRachar/app/src/main/res/layout-land/activity_main.xml" value="0.14814814814814814" />
@@ -14,7 +26,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

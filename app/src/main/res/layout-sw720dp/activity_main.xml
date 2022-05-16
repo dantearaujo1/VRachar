@@ -17,7 +17,7 @@
         android:ems="4"
         android:text="@string/peopleText"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="48sp"
         android:labelFor="@+id/tbContas"
         app:layout_constraintEnd_toStartOf="@+id/gdVCenter"
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
@@ -33,7 +33,7 @@
         android:contentDescription="@string/peopleText"
         android:text="@string/resultText"
         android:textColor="@color/white"
-        android:textSize="34sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@id/gdHCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -51,6 +51,7 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHint="#607D8B"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="@+id/gdVRight"
         app:layout_constraintStart_toStartOf="@+id/gdVCenter"
         app:layout_constraintTop_toTopOf="@+id/gdHLeft" />
@@ -65,7 +66,7 @@
         android:ems="4"
         android:text="@string/valueText"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="48sp"
         android:labelFor="@+id/tbValor"
         app:layout_constraintEnd_toStartOf="@+id/gdVCenter"
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
@@ -75,12 +76,13 @@
         android:id="@+id/tbValor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="@string/valueHint"
         android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
+        android:textSize="32sp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHint="#78909C"
@@ -94,11 +96,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
         android:clickable="true"
+        android:contentDescription="@string/ttsButtonContent"
         android:src="@android:drawable/ic_lock_silent_mode_off"
+        app:fabCustomSize="150dp"
         app:layout_constraintEnd_toStartOf="@+id/gdVRight"
         app:layout_constraintStart_toEndOf="@+id/fbShare"
         app:layout_constraintTop_toBottomOf="@+id/gdHCenter"
-        android:contentDescription="@string/ttsButtonContent" />
+        app:maxImageSize="80dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fbShare"
@@ -106,11 +110,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
         android:clickable="true"
+        android:contentDescription="@string/shareButtonContent"
+        app:fabCustomSize="150dp"
         app:layout_constraintEnd_toStartOf="@+id/fbSound"
         app:layout_constraintStart_toStartOf="@+id/gdVLeft"
         app:layout_constraintTop_toBottomOf="@+id/gdHCenter"
+        app:maxImageSize="80dp"
         app:srcCompat="?attr/actionModeShareDrawable"
-        android:contentDescription="@string/shareButtonContent"
         tools:ignore="ImageContrastCheck" />
 
     <androidx.constraintlayout.widget.Guideline

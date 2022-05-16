@@ -1,6 +1,7 @@
 package com.example.vrachar
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
@@ -60,7 +61,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val tbContas : EditText = findViewById(R.id.tbContas);
         val btnShare : FloatingActionButton = findViewById(R.id.fbShare);
         val btnSpeech : FloatingActionButton = findViewById(R.id.fbSound);
-        m_sResultado = getString(R.string.currencyText,"RS", m_resultado);
+        m_sResultado = getString(R.string.resultText,"RS", m_resultado);
         lbResultado.text = m_sResultado;
 
         tbValor.addTextChangedListener(object : TextWatcher {
@@ -70,7 +71,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
             override fun afterTextChanged(s: Editable){
 
-                lbResultado.text = getString(R.string.currencyText,"R$".toString(), m_resultado );
+                lbResultado.text = getString(R.string.resultText,"R$".toString(), m_resultado );
                 m_sResultado = lbResultado.text.toString();
 
             }
@@ -83,7 +84,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
             }
             override fun afterTextChanged(s: Editable){
 
-                lbResultado.text = getString(R.string.currencyText,"R$", m_resultado);
+                lbResultado.text = getString(R.string.resultText,"R$", m_resultado);
                 m_sResultado = lbResultado.text.toString();
 
             }
@@ -114,6 +115,9 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         super.onRestoreInstanceState(savedInstanceState)
     }
 
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+    }
     fun shareContent(content : String){
         val intent : Intent = Intent().apply{
             action = Intent.ACTION_SEND;
